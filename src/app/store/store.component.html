@@ -16,7 +16,7 @@
           Home
         </button>
         <button *ngFor="let cat of categories" class="btn btn-outline-primary" [class.active]="cat == selectedCategory"
-          (click)="changeCategory(cat)">
+          (click)="changeCategory(cat)">//hàm changeCategory được viết bên component.ts để chuyển loại
           {{cat}}
         </button>
       </div>
@@ -24,7 +24,7 @@
     <div class="col-9 p-2 text-dark">
       <div *ngFor="let product of products" class="card m-1 p-1 bg-light">
         <h4>
-          {{product.name}}
+          {{product.name}}//lấy tên của sản phẩm
           <span class="badge rounded-pill bg-primary" style="float:right">
             {{ product.price | currency:"USD":"symbol":"2.2-2" }}
           </span>
