@@ -26,7 +26,7 @@ public product:product[]=[
   new product(15, "Product 15", "Category 3", "Product 15 (Category 3)", 100),
 ];
 // public category:
-getProducts():Observable<product[]>
+getProducts():Observable<product[]>//Observable 
 {
   return from([this.product]);
 }
