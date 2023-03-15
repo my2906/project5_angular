@@ -11,7 +11,7 @@ import { StoreModule } from '../store.module';
 })
 export class StoreComponent {
   selectedCategory: string | undefined;
-  productsPerPage = 4;
+  productsPerPage = 4;//mỗi trang có 4 sản phẩm
   selectedPage = 1;
   constructor(private repository: ProductRepository)  {
 
